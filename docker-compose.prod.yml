@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  web:
+    image: francescoxx/nodemon:0.0.1
+    build:
+      context: ./
+      target: prod
+    ports:
+      - '9000:9000'

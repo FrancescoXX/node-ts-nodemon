@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  web:
+    image: nodemon:0.0.1
+    build:
+      context: ./
+      target: dev
+    volumes:
+      - .:/src
+    ports:
+      - '9000:9000'
